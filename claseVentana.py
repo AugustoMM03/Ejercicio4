@@ -7,11 +7,6 @@ class Ventana:
         self.__valorXInfDer = min(500,valorXInfDer)
         self.__valorYInfDer = min(500,valorYInfDer)
 
-        if self.__valorXSupIzq > self.__valorXInfDer:
-            self.__valorXSupIzq, self.__valorXInfDer = self.__valorXInfDer, self.__valorXSupIzq
-        if self.__valorYSupIzq > self.__valorYInfDer:
-            self.__valorYSupIzq, self.__valorYInfDer = self.__valorYInfDer, self.__valorYSupIzq
-    
     def mostrar(self):
 
         print("Ventana {} con vertice superior izquierdo ({}, {}) y vertice inferior derecho ({}, {})".format(self.__titulo, self.__valorXSupIzq, self.__valorYSupIzq, self.__valorXInfDer, self.__valorYInfDer))
